@@ -1,0 +1,107 @@
+.introduction{
+    width: 75%;
+    margin: 50px auto 50px auto;
+    padding: 10px 25px 25px 25px;
+}
+.introduction h1{
+    font-style: italic;
+    margin: 30px auto 30px auto;
+    text-align: center;
+}
+.introduction p{    
+    font-size: 20px;
+    line-height: 1.7em;
+}
+.depart_title{
+    width: 75%;
+    margin: 50px auto 50px auto;
+}
+.depart_title h1{
+    font-style: italic;
+    margin: 30px auto 30px auto;
+    text-align: center;
+}
+.depart{
+    width: 100%;
+    margin: 20px 0 45px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.box{
+    position: relative;
+    width: 200px;
+    height:400px;
+    background:slategray;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
+}
+ .box .imgBx img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: 0.5s;
+ }
+ .box:hover .imgBx img{
+     opacity: 0.6;
+ }
+ .box .content{
+     position: absolute;
+     bottom: 20px;
+     left: 10%;
+     width: 80%;
+     height: 60px;
+     background: snow;
+     transition: 0.5s;
+     overflow: hidden;
+     padding: 15px;
+     box-sizing: border-box;
+     opacity: 0.6;
+ }
+ .box:hover .content{
+     width: 100%;
+     height: 100%;
+     bottom: 0;
+     left: 0;
+ }
+
+ .box .content h3{
+     margin: 0;
+     padding: 0;
+     font-size: 20px;
+ }
+ .box .content p{
+    margin: 10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.3s;
+    text-align: justify;
+}
+.box:hover .content p{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.presidents{
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    background-image: url(../pictures/back.jpeg);
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+    font-style: italic;
+}
+.presidents a{
+    color:royalblue;
+    font-weight: 700;
+}
